@@ -1,0 +1,124 @@
+.text {
+	-fx-font-smoothing-type: gray;
+}
+
+.menu-button {
+	-fx-background-color: #444444;
+	-fx-text-fill: #FFFFFF;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+}
+
+.menu-button:hover {
+	-fx-background-color: #666666;
+}
+
+.menu-button-active {
+	-fx-background-color: #F4CB45;
+	-fx-text-fill: #FFFFFF;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+}
+
+.menu-button-active:hover {
+	-fx-background-color: #F4CB45;
+}
+
+StackPane {
+	-fx-background-color: none;
+}
+
+TextField {
+	-fx-border-color: #E8E8E8;
+	-fx-border-width: 3;
+	-fx-text-box-border: red;
+	-fx-focus-color: transparent;
+	-fx-border-radius: 3;
+	-fx-background-insets: 0;
+	-fx-background-color: transparent;
+}
+
+.preferred-coin-button {
+	-fx-background-color: #FFFFFF;
+	-fx-text-fill: #000000;
+	-fx-border-color: #FFFFFF;
+	-fx-border-width: 0 0 5 0;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+}
+
+.preferred-coin-button:hover {
+	-fx-border-color: #EFEFEF;
+}
+
+.preferred-coin-button-active {
+	-fx-background-color: #FFFFFF;
+	-fx-text-fill: #000000;
+	-fx-border-color: #F4CB45;
+	-fx-border-width: 0 0 5 0;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+}
+
+.preferred-coin-button-active:hover {
+	-fx-border-color: #F4CB45;
+}
+
+.exclude-coin-button {
+	-fx-background-color: #FFFFFF;
+	-fx-text-fill: #000000;
+	-fx-border-color: #FFFFFF;
+	-fx-border-width: 0 0 5 0;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+}
+
+.exclude-coin-button:hover {
+	-fx-text-fill: #F4CB45;
+}
+
+.exclude-coin-button-active {
+	-fx-text-fill: #D6D6D6;
+	-fx-background-color: #FFFFFF;
+	-fx-border-color: #FFFFFF;
+	-fx-border-width: 0 0 5 0;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+}
+
+.exclude-coin-button-active:hover {
+	-fx-text-fill: #D6D6D6;
+}
+
+.generate-button {
+	-fx-background-color: #F4CB45;
+	-fx-text-fill: #FFFFFF;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-background-radius: 50;
+	-fx-background-insets: 0;
+}
+
+.generate-button:hover {
+
+}
+
+.generate-button:pressed {
+	-fx-background-color: #FCC101;
+}
+
+VBox, BorderPane {
+	-fx-background-color: #FFFFFF;
+}
