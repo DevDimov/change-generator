@@ -8,10 +8,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
@@ -117,10 +114,10 @@ public class GUI extends Application {
 	
 	public String toPounds(int value) {
 		if (value == 200) {
-			return "£2";
+			return "Â£2";
 		}
 		if (value == 100) {
-			return "£1";
+			return "Â£1";
 		}
 		if (value == 50) {
 			return "50p";
@@ -147,10 +144,10 @@ public class GUI extends Application {
 	
 	public int getPreferredCoinInPence() {
 		String coinName = activePreferredCoin[0].getText();
-		if (coinName.equals("£2")) {
+		if (coinName.equals("Â£2")) {
 			return 200;
 		}
-		if (coinName.equals("£1")) {
+		if (coinName.equals("Â£1")) {
 			return 100;
 		}
 		if (coinName.equals("50p")) {
@@ -171,10 +168,10 @@ public class GUI extends Application {
 	
 	public int getExcludedCoinInPence() {
 		String excludedCoin = activeExcludedCoin[0].getText();
-		if (excludedCoin.equals("£2")) {
+		if (excludedCoin.equals("Â£2")) {
 			return 200;
 		}
-		if (excludedCoin.equals("£1")) {
+		if (excludedCoin.equals("Â£1")) {
 			return 100;
 		}
 		if (excludedCoin.equals("50p")) {
@@ -248,7 +245,7 @@ public class GUI extends Application {
 	
 	public void showMaxAmountError(Alert a) {
        a.setAlertType(AlertType.ERROR);
-       a.setHeaderText("Please insert up to £100.00 only");
+       a.setHeaderText("Please insert up to Â£100.00 only");
        a.show();
     }
 	
@@ -280,8 +277,8 @@ public class GUI extends Application {
 		HBox.setHgrow(singleCoinMenuButton, Priority.ALWAYS);
 		HBox.setHgrow(multiCoinMenuButton, Priority.ALWAYS);
 		
-		singleCoinInsertLabel = createLabel("Insert amount (up to £100)");
-		Label poundSymbol = new Label("£");
+		singleCoinInsertLabel = createLabel("Insert amount (up to Â£100)");
+		Label poundSymbol = new Label("Â£");
 		poundSymbol.setFont(Font.loadFont("file:resources/fonts/GiraSans-Regular.ttf", 20));
 		poundSymbol.setPadding(new Insets (0,0,0,5));
 		singleCoinInput = createTextField();
@@ -293,7 +290,7 @@ public class GUI extends Application {
 		StackPane.setAlignment(poundSymbol, Pos.CENTER_LEFT);
 		
 		preferredCoinLabel = createLabel("Choose preferred coin");
-		Button twoPoundButtonSingleCoin = createPreferredCoinButton("£2");
+		Button twoPoundButtonSingleCoin = createPreferredCoinButton("Â£2");
 		twoPoundButtonSingleCoin.getStyleClass().remove("preferred-coin-button");
 		twoPoundButtonSingleCoin.getStyleClass().add("preferred-coin-button-active");
 		activePreferredCoin[0] = twoPoundButtonSingleCoin;
@@ -337,8 +334,8 @@ public class GUI extends Application {
 		multiCoinScene = new Scene(borderMultiCoin);
 		multiCoinScene.getStylesheets().add("file:resources/style.css");
 		
-		multiCoinInsertLabel = createLabel("Insert amount (up to £100)");
-		Label poundSymbolMultiCoin = new Label("£");
+		multiCoinInsertLabel = createLabel("Insert amount (up to Â£100)");
+		Label poundSymbolMultiCoin = new Label("Â£");
 		poundSymbolMultiCoin.setFont(Font.loadFont("file:resources/fonts/GiraSans-Regular.ttf", 20));
 		poundSymbolMultiCoin.setPadding(new Insets (0,0,0,5));
 		multiCoinInput = createTextField();
@@ -351,7 +348,7 @@ public class GUI extends Application {
 
 		excludeCoinLabel = createLabel("Choose coin to exclude");
 		
-		Button twoPoundButtonMultiCoin = createExcludeCoinButton("£2");
+		Button twoPoundButtonMultiCoin = createExcludeCoinButton("Â£2");
 		twoPoundButtonMultiCoin.getStyleClass().remove("exclude-coin-button");
 		twoPoundButtonMultiCoin.getStyleClass().add("exclude-coin-button-active");
 		activeExcludedCoin[0] = twoPoundButtonMultiCoin;
